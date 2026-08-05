@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+<body>
+    <!-- Form Validation -->
+    <form action="" method="post">
+        
+        <!-- Personal Details -->
+        <fieldset> 
+            <!-- fieldset: lets us group related form controls -->
+            <legend>Personal Information</legend>
+
+            <p>
+                <input type="text" name="fullname" id="fullname" placeholder="Enter fullname*" required minlength="3" maxlength="10">
+            </p>
+            <p>
+                <input type="email" name="email" id="email" placeholder="Enter email*" required>
+            </p>
+            <p>
+                <input type="password" name="password" id="password" placeholder="Enter password" minlength="3" maxlength="10" required>
+            </p>
+            <p>
+                <input type="number" name="age" id="age" placeholder="Enter age" min="1" max="100" required>
+            </p>
+            <p>
+                <input type="tel" name="phone" id="phone" placeholder="Enter phone" pattern="[0-9]{10}" required>
+            </p>
+        </fieldset>
+
+        <!-- Preferences Section -->
+        <fieldset>
+            <legend>Preferences</legend>
+            
+            <!-- Gender Selection -->
+            <p>Gender:</p>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>  
+
+            <!-- Skills Checkboxes -->
+            <p>Skills:</p>
+            <input type="checkbox" name="skills" id="html" value="html">
+            <label for="html">html</label>
+
+            <input type="checkbox" name="skills" id="css" value="css">
+            <label for="css">css</label>
+
+            <input type="checkbox" name="skills" id="javascript" value="javascript">
+            <label for="javascript">Javascript</label>
+
+            <input type="checkbox" name="skills" id="reactjs" value="reactjs">
+            <label for="reactjs">ReactJS</label>
+        </fieldset>
+
+        <!-- Country Selection -->
+        <fieldset>  
+            <p>
+                <label for="country">Country:</label><br>
+                <!-- Dropdown menu -->
+                <select name="country" id="country">
+                    <option value="" disabled selected>Select your country</option>
+                    <option value="us">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="ca">Canada</option>
+                    <option value="in">India</option>
+                    <option value="au">Australia</option>
+                </select>
+            </p>
+
+            <!-- Added Message Textarea -->
+            <p>
+                <label for="message">Message:</label><br>
+                <textarea name="message" id="message" rows="4" cols="50"></textarea>
+            </p>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+
+    </form>
+</body>
+</html>
