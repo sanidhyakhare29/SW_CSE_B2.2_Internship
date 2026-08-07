@@ -3,18 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grouping selector</title>
+    <title>Grouping selector | Descendant selector | Child selector</title>
     <style>
-        h1, h2, h3 {
+        h1,h2,h3{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color: crimson;
+        }
+        div p{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: blueviolet;
+        }
+        /* Child selector */
+        ul > li{
+            list-style-type: square;
+            color: chocolate;
         }
     </style>
 </head>
 <body>
-    <h1>Frontend development</h1>
-    <h2>CSS</h2>
-    <h3>Selectors</h3>
-    <h4>Grouping Selector</h4>
+    <!-- Grouping Selector Example -->
+    <h1>Frontend Development</h1>
+    <h2>CSS Selectors</h2>
+    <h3>Examples</h3>
+
+    <!-- Descendant Selector Example -->
+    <div>
+        <p>This paragraph is styled using a descendant selector (div p).</p>
+    </div>
+
+    <!-- Child Selector Example -->
+    <ul>
+        <li>First child list item (styled with ul > li)</li>
+        <li>Second child list item</li>
+    </ul>
 </body>
 </html>
